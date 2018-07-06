@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# #HTTP REQUEST
+# meme_api = RestClient.get("https://api.imgflip.com/get_memes")
+# memes = JSON.parse(meme_api)
+
