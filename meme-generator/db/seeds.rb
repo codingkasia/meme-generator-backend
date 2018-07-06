@@ -10,3 +10,6 @@
 # meme_api = RestClient.get("https://api.imgflip.com/get_memes")
 # memes = JSON.parse(meme_api)
 
+User.create(:name => 'CodingKasia' )
+memes = Meme.create(user_id: 1, url: 'https://api.imgflip.com/')
+comments = Comment.create(user_id: 1, meme_id: 1, content: 'Hi')
