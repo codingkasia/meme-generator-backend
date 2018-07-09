@@ -6,6 +6,7 @@ class Meme < ApplicationRecord
     url = 'https://api.imgflip.com/caption_image'
 
     meme = RestClient.post(url, params)
-    JSON.parse(meme.body)
+    return JSON.parse(meme.body)
+    
   end
 end
