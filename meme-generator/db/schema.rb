@@ -27,6 +27,11 @@ ActiveRecord::Schema.define(version: 2018_07_06_173733) do
     t.string "url"
     t.integer "user_id"
     t.string "page_url"
+    t.integer "template_id"
+    t.string "username"
+    t.string "password"
+    t.string "text0"
+    t.string "text1"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

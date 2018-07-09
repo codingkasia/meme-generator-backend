@@ -4,8 +4,10 @@ class Api::V1::MemesController < ApplicationController
   end
 
   def create
-    meme = Meme.create(meme_params)
-    render json: meme
+    meme = Meme.generate_meme(params)
+    # byebug
+    new_meme = Meme.create(meme)
+    render json: new_meme
   end
 
   def destroy
