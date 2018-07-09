@@ -11,5 +11,5 @@
 # memes = JSON.parse(meme_api)
 
 User.create(:name => 'CodingKasia' )
-memes = Meme.create(user_id: 1, url: 'https://api.imgflip.com/')
+memes = Meme.create(user_id: 1, url: 'http://i.imgflip.com/123abc.jpg', page_url: "https://imgflip.com/i/123abc")
 comments = Comment.create(user_id: 1, meme_id: 1, content: 'Hi')

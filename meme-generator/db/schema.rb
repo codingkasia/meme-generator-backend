@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2018_07_06_173733) do
   create_table "memes", force: :cascade do |t|
     t.string "url"
     t.integer "user_id"
+    t.string "page_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

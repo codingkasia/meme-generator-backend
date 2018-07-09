@@ -1,4 +1,4 @@
-class CommentsController < ApplicationController
+class Api::V1::CommentsController < ApplicationController
   def index
     render json: Comment.all
   end
@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
 
   private
 
-  def fruit_params
-    params.require(:comment).permit(:id, :name, :description)
+  def comment_params
+    params.require(:comment).permit(:id, :name, :content)
   end
 end
