@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2018_07_06_173733) do
   end
 
   create_table "memes", force: :cascade do |t|
+    t.string "data"
+    t.boolean "success"
     t.string "url"
     t.integer "user_id"
     t.string "page_url"
