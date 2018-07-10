@@ -11,7 +11,7 @@ class Api::V1::MemesController < ApplicationController
   def create
     # meme = Meme.generate_meme(params)
   meme = Meme.generate_meme(template_id: params[:template_id], username: "kasiarosenb", password: "kasiarosenb", text0: params[:text0], text1: params[:text1])
-  byebug
+
   new_meme = Meme.create(url: meme["url"], page_url: meme["page_url"])
     render json: new_meme
   end
