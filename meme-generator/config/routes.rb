@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
      resources :comments, only: [:index, :create, :destroy, :update]
-     resources :memes, only: [:index, :create, :destroy, :update]
+     resources :memes, only: [:index, :show, :create, :destroy, :update]
     #  root to: 'site#index'
     end 
   end 

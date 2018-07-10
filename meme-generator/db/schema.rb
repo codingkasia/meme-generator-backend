@@ -25,11 +25,12 @@ ActiveRecord::Schema.define(version: 2018_07_06_173733) do
 
   create_table "memes", force: :cascade do |t|
     t.string "data"
-    t.boolean "success"
     t.string "url"
-    t.integer "user_id"
     t.string "page_url"
+    t.boolean "success"
+    t.integer "user_id"
     t.integer "template_id"
+    t.integer "memeId"
     t.string "username"
     t.string "password"
     t.string "text0"

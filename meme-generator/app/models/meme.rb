@@ -4,8 +4,10 @@ class Meme < ApplicationRecord
 
   def self.generate_meme(params)
     url = 'https://api.imgflip.com/caption_image'
+
     meme = RestClient.post(url, params)
-    return JSON.parse(meme.body)
+    json = JSON.parse(meme.body)
+    return json["data"]
     
   end
 end
